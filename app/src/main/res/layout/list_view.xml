@@ -5,22 +5,26 @@
 
     <TextView
         android:id="@+id/taskName"
-        android:textSize="16dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/taskDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/taskName" />
+        android:layout_alignParentBottom="true" />
 
     <ImageButton
         android:id="@+id/deleteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/taskName"
+        android:padding="10dp"
         android:background="@android:color/transparent"
-        android:src="@android:drawable/ic_delete" />
+        android:onClick="deleteButton"
+        android:src="@android:drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="174dp" />
 
 </RelativeLayout>
